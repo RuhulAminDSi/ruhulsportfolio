@@ -2,8 +2,11 @@
 *.pdf
 *.docx
 *.png
-*.jpg
 *.jpeg
 .DS_Store
 node_modules/
 .env
+
+# Allow profile image and assets
+!assets/
+!assets/**/*.jpg
