@@ -344,6 +344,22 @@ section h2::after {
 /* ==================== About Section ==================== */
 .about {
     background: var(--light-bg);
+    text-align: center;
+}
+
+.about .container {
+    text-align: center;
+}
+
+.about h2 {
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.about h2::after {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .about-content {
@@ -351,6 +367,11 @@ section h2::after {
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
     align-items: center;
+    text-align: left;
+}
+
+.about-text {
+    text-align: left;
 }
 
 .about-text p {
@@ -358,12 +379,13 @@ section h2::after {
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-light);
+    text-align: left;
 }
 
 .about-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .stat {
@@ -372,6 +394,7 @@ section h2::after {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    min-width: 150px;
 }
 
 .stat h3 {
@@ -379,7 +402,6 @@ section h2::after {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
-    text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
 }
