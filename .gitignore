@@ -6,6 +6,8 @@
 .DS_Store
 node_modules/
 .env
+.idea/
+.vscode/
 
 # Allow profile image and assets
 !assets/
