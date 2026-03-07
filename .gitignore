@@ -1,0 +1,9 @@
+# Ignore unnecessary files
+*.pdf
+*.docx
+*.png
+*.jpg
+*.jpeg
+.DS_Store
+node_modules/
+.env
