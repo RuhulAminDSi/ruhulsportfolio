@@ -450,7 +450,7 @@ section h2::after {
 }
 
 .experience .container {
-    text-align: center;
+    text-align: left;
 }
 
 .experience h2 {
@@ -577,7 +577,7 @@ section h2::after {
 }
 
 .skills .container {
-    text-align: center;
+    text-align: left;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -605,7 +605,8 @@ section h2::after {
 }
 
 .skills-grid {
-    display: grid;
+    display: inline-flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-content: center;
