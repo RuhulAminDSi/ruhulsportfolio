@@ -513,8 +513,18 @@ ul { list-style: none; }
     display: flex; width: max-content; padding: 14px 0;
     animation: marquee 28s linear infinite;
 }
-.marquee-track span { display: inline-flex; flex-direction: column; align-items: center; gap: 4px; padding: 0 24px; color: var(--text-muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
-.marquee-track span i { font-size: 18px; }
+.marquee-track span { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; padding: 0 24px; color: var(--text-muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
+.marquee-track span i { font-size: 20px; }
+.icon-cypress { color: #69D3A7; }
+.icon-playwright { color: #2EAD33; }
+.icon-postman { color: #FF6C37; }
+.icon-jmeter { color: #D22128; }
+.icon-testrail { color: #65C3E8; }
+.icon-jira { color: #0052CC; }
+.icon-oracle { color: #F80000; }
+.icon-react { color: #61DAFB; }
+.icon-nodejs { color: #339933; }
+.icon-sql { color: #00758F; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* Timeline */
