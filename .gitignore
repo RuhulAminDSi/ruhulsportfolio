@@ -9,6 +9,10 @@ node_modules/
 .idea/
 .vscode/
 
+.playwright-mcp/
+.vercel/
+.env.local
+
 # Allow profile image and assets
 !assets/
 !assets/**/*.jpg

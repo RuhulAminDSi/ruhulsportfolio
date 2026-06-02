@@ -3,425 +3,432 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Md Ruhul Amin - QA Engineer Portfolio with 4+ years of experience in test automation, API testing, and performance testing.">
-    <title>Md Ruhul Amin - QA Engineer Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="Md Ruhul Amin — SQA Engineer, Test Automation Specialist, API & Performance Testing Portfolio">
+    <title>Md Ruhul Amin — SQA Engineer | Test Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Ruhul Amin</h1>
-                <p class="role">QA Engineer</p>
+<body class="is-loading">
+
+<div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+        <div class="preloader-logo"><span>RA</span></div>
+        <p class="preloader-name">Md Ruhul Amin</p>
+        <p class="preloader-role">SQA Engineer</p>
+        <div class="preloader-bar"><div class="preloader-bar-fill" id="preloaderBar"></div></div>
+        <p class="preloader-counter"><span id="preloaderCount">0</span><small>%</small></p>
+    </div>
+    <p class="preloader-foot">Loading portfolio experience…</p>
+</div>
+
+<nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-inner">
+        <a class="logo" href="#home" aria-label="Md Ruhul Amin home">
+            <div class="logo-box"><span>RA</span></div>
+            <span class="logo-name">Md Ruhul Amin</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="nav-social">
+                <a href="mailto:hmruhul16.ict@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/hmruhul-ict/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/RuhulAminDSi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+            <a class="btn btn-primary btn-sm" href="mailto:hmruhul16.ict@gmail.com">Hire Me</a>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h2>Hi, I'm Md Ruhul Amin</h2>
-                <p class="subtitle">QA Engineer | Test Automation | Performance Testing</p>
-                <p class="description">
-                    Passionate about ensuring software quality through comprehensive testing strategies, 
-                    automation, and performance analysis. Experienced with modern testing frameworks and tools.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
-                </div>
-            </div>
-            <div class="profile-section">
-                <div class="profile-pic">
-                    <img src="assets/profile11.jpg" alt="Md Ruhul Amin Profile Picture">
-                </div>
-            </div>
-        </div>
-    </header>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+<main>
+    <!-- ==================== Hero ==================== -->
+    <section id="home" class="hero overflow-hidden">
+        <div class="hero-bg-dots" aria-hidden="true"></div>
+        <div class="hero-orb" aria-hidden="true"></div>
+        <div class="hero-orb-2" aria-hidden="true"></div>
+        <div class="hero-orb-3" aria-hidden="true"></div>
+
+        <div class="hero-photo-block" aria-hidden="true"></div>
+        <div class="hero-photo-mask" aria-hidden="true"></div>
+        <div class="hero-photo-bottom" aria-hidden="true"></div>
+        <div class="hero-photo-mobile" aria-hidden="true"></div>
+
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a dedicated Software Quality Assurance Engineer with 4+ years of professional experience
-                        in testing complex applications, identifying defects, and ensuring product reliability.
-                        My expertise spans across manual testing, test automation, API testing, and performance testing.
-                    </p>
-                    <p>
-                        Throughout my career, I've worked with modern testing frameworks and tools including Cypress,
-                        Playwright, Postman, and Apache JMeter. I have a strong background in test case design,
-                        bug tracking, and quality assurance best practices.
-                    </p>
-                    <p>
-                        I hold a Bachelor's degree in Information and Communication Technology from Mawlana Bhashani
-                        Science Technology University and have published research on advanced technologies.
-                    </p>
+            <div class="hero-copy">
+                <div class="eyebrow-row">
+                    <span class="pill pill-green"><span class="avail-dot"></span> SQA Engineer</span>
+                    <span class="pill pill-violet">Automation Specialist</span>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>4+</h3>
-                        <p>Years Experience</p>
-                    </div>
+
+                <h1 class="hero-name"><span class="hero-name-shimmer">Md Ruhul</span> <span class="hero-name-shimmer">Amin</span></h1>
+
+                <div class="role-line">
+                    <span class="role-bar"></span>
+                    <span class="role-text" id="role-text"></span><span class="role-caret"></span>
+                </div>
+
+                <p class="hero-lead">I don't just test software — <span class="lead-em">I build quality.</span> From manual foundations to Cypress, Playwright, Postman and JMeter workflows, 4+ years helping teams ship cleaner, faster and more reliably.</p>
+
+                <div class="hero-proof-list">
+                    <div class="proof-item"><span class="proof-company">DSi</span> TestRail cases, Jira defects, Postman API checks, Cypress &amp; Playwright automation</div>
+                    <div class="proof-item"><span class="proof-company">TVSL</span> MCS documentation, BBA Archive Module QA, Oracle &amp; SQL validation</div>
+                    <div class="proof-item"><span class="proof-company">JMeter</span> Load testing, bottleneck discovery and optimization recommendations</div>
+                </div>
+
+                <div class="cta-row">
+                    <a href="#contact" class="btn btn-primary">Let's Talk <i class="fas fa-arrow-right"></i></a>
+                    <a href="#services" class="btn btn-ghost">View Services <i class="fas fa-arrow-down"></i></a>
+                    <span class="open-badge"><span class="avail-dot"></span> Open to work</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>SQA Engineer</h3>
-                        <p class="company">Dynamic Solution Innovators Ltd. (DSi)</p>
-                        <p class="period">Mar 2024 - Present (2 yrs 1 mo)</p>
-                        <p class="location">Mohakhali DOHS · On-site</p>
-                        <ul class="responsibilities">
-                            <li>Write comprehensive test cases and test each module in TestRail</li>
-                            <li>Track and report bugs in Jira with detailed documentation</li>
-                            <li>Perform API testing using Postman for REST API validation</li>
-                            <li>Develop and maintain test automation scripts using Cypress and Playwright</li>
-                            <li>Integrate Oracle Database testing with automation frameworks</li>
-                            <li>Conduct performance testing using Apache JMeter</li>
-                        </ul>
-                        <div class="skills-list">
-                            <span class="skill-tag">Postman</span>
-                            <span class="skill-tag">TestRail</span>
-                            <span class="skill-tag">Cypress</span>
-                            <span class="skill-tag">Playwright</span>
-                            <span class="skill-tag">JMeter</span>
-                            <span class="skill-tag">Jira</span>
-                        </div>
-                    </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <strong>4+</strong>
+                    <span>Years Experience</span>
+                    <small>Enterprise QA to hands-on automation</small>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>SQA Engineer & Data Analyst</h3>
-                        <p class="company">TVSL - Tech Valley Solutions Ltd.</p>
-                        <p class="period">Mar 2022 - Feb 2024 (2 yrs)</p>
-                        <p class="location">Dhaka, Bangladesh · On-site</p>
-                        <ul class="responsibilities">
-                            <li>Create comprehensive documentation for MCS (Management Control System)</li>
-                            <li>Design and execute comprehensive test cases for all modules</li>
-                            <li>Develop and maintain BBA Archive Module using full-stack technologies</li>
-                            <li>Work with Node.js, Express.js, React.js, and Oracle Database</li>
-                            <li>Implement SQL optimization and database design improvements</li>
-                        </ul>
-                        <div class="skills-list">
-                            <span class="skill-tag">Test Design</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">React.js</span>
-                            <span class="skill-tag">Oracle DB</span>
-                            <span class="skill-tag">SQL Developer</span>
-                        </div>
-                    </div>
+                <div class="stat-card">
+                    <strong>30+</strong>
+                    <span>Skills &amp; Tools</span>
+                    <small>Across testing, automation, and backend</small>
+                </div>
+                <div class="stat-card">
+                    <strong>2</strong>
+                    <span>Companies</span>
+                    <small>DSi &amp; TVSL · enterprise products</small>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- ==================== Services ==================== -->
+    <section id="services" class="section">
         <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Testing & QA</h3>
-                    <ul>
-                        <li>Test Case Design & Execution</li>
-                        <li>Test Automation</li>
-                        <li>API Testing</li>
-                        <li>Performance Testing</li>
-                        <li>Bug Tracking & Reporting</li>
-                        <li>Test Documentation</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Automation Tools</h3>
-                    <ul>
-                        <li>Cypress</li>
-                        <li>Playwright</li>
-                        <li>Postman</li>
-                        <li>TestRail</li>
-                        <li>Jira</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
+            <div class="section-header reveal">
+                <span class="kicker">What I Offer</span>
+                <h2 class="section-heading">Services</h2>
+                <p class="section-sub">Full-stack quality engineering — from test strategy and automation framework development to API testing, performance engineering, and CI/CD-friendly delivery.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-vial"></i></div>
+                    <h3>Manual QA &amp; Test Design</h3>
+                    <p>Test case design, exploratory testing, regression cycles, defect reporting, and structured QA documentation with enterprise standards.</p>
+                </article>
+                <article class="service-card reveal delay-1">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Cypress Automation</h3>
+                    <p>End-to-end UI test automation with Cypress, Page Object Model, data-driven tests, and CI-friendly reporting for modern web apps.</p>
+                </article>
+                <article class="service-card reveal delay-2">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Playwright Automation</h3>
+                    <p>Cross-browser automation with Playwright, multi-context testing, mobile web emulation, and parallel execution workflows.</p>
+                </article>
+                <article class="service-card reveal delay-3">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3>API Testing</h3>
+                    <p>REST API validation with Postman, automated assertion suites, environment chaining, and scenario-based integration coverage.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-gauge-high"></i></div>
                     <h3>Performance Testing</h3>
-                    <ul>
-                        <li>Apache JMeter</li>
-                        <li>Load Testing</li>
-                        <li>Stress Testing</li>
-                        <li>Scalability Analysis</li>
-                    </ul>
-                </div>
+                    <p>JMeter load, stress, and endurance tests to identify bottlenecks, measure throughput, and guide system optimization.</p>
+                </article>
+                <article class="service-card reveal delay-1">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Validation</h3>
+                    <p>Oracle &amp; SQL data integrity checks, ETL validation, query optimization, and cross-system data consistency testing.</p>
+                </article>
+                <article class="service-card reveal delay-2">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>CI/CD Integration</h3>
+                    <p>Automated test pipeline integration with GitHub Actions, enabling quality gates, automated reporting, and continuous validation.</p>
+                </article>
+                <article class="service-card reveal delay-3">
+                    <div class="card-shine"></div>
+                    <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>QA Consulting &amp; Strategy</h3>
+                    <p>Test strategy design, framework selection, process improvement, and end-to-end QA transformation for teams of any size.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-                <div class="skill-category">
-                    <h3>Backend Technologies</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Oracle Database</li>
-                        <li>SQL</li>
-                        <li>SQL Developer</li>
-                    </ul>
+    <!-- ==================== Skills ==================== -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="stat-banner reveal">
+                <div class="stat-banner-card">
+                    <i class="fas fa-briefcase"></i>
+                    <strong>0+</strong>
+                    <span>Years Experience</span>
+                    <small>Enterprise QA to freelance</small>
                 </div>
-
-                <div class="skill-category">
-                    <h3>Frontend Technologies</h3>
-                    <ul>
-                        <li>React.js</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>PHP</li>
-                    </ul>
+                <div class="stat-banner-card">
+                    <i class="fas fa-layer-group"></i>
+                    <strong>0+</strong>
+                    <span>Projects Completed</span>
+                    <small>Across multiple domains</small>
                 </div>
+                <div class="stat-banner-card">
+                    <i class="fas fa-trophy"></i>
+                    <strong>0+</strong>
+                    <span>Startups Consulted</span>
+                    <small>QA strategy from day one</small>
+                </div>
+            </div>
 
-                <div class="skill-category">
-                    <h3>Database & Cloud</h3>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>Oracle DB</li>
-                        <li>Cloud Computing</li>
-                        <li>Virtualization</li>
-                        <li>VMware</li>
-                    </ul>
+            <div class="section-header reveal" style="margin-top: 64px;">
+                <span class="kicker">Full Toolkit</span>
+                <h2 class="section-heading">Technical Skills &amp; Tools</h2>
+                <p class="section-sub">A practical QA stack — testing, automation, performance, backend, and cloud tools used across real enterprise projects.</p>
+            </div>
+
+            <div class="skill-grid reveal">
+                <div class="skill-card">
+                    <span class="skill-count">16</span>
+                    <h3>Testing &amp; QA</h3>
+                    <p>Manual Testing, Regression, Defect Reporting, Test Documentation, QA Process, Integration Testing</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-count">08</span>
+                    <h3>Automation</h3>
+                    <p>Cypress, Playwright, Selenium Basics, Postman, TestRail, Jira, Reporting</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-count">06</span>
+                    <h3>Performance</h3>
+                    <p>Apache JMeter, Load Testing, Stress Testing, Scalability Analysis, Tuning</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-count">12</span>
+                    <h3>Backend &amp; Database</h3>
+                    <p>Node.js, Express.js, Oracle, MySQL, SQL, SQL Developer, Database Validation</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-count">10</span>
+                    <h3>Frontend &amp; Web</h3>
+                    <p>React.js, JavaScript, HTML, CSS, PHP, Laravel Basics, REST Concepts</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-count">08</span>
+                    <h3>Cloud &amp; Research</h3>
+                    <p>Cloud Computing, Virtualization, VMware, BdREN Course, Technical Publication</p>
+                </div>
+            </div>
+
+            <div class="marquee reveal">
+                <div class="marquee-track">
+                    <span>Cypress</span><span>Playwright</span><span>Postman</span><span>JMeter</span><span>TestRail</span><span>Jira</span><span>Oracle DB</span><span>React</span><span>Node.js</span><span>SQL</span>
+                    <span>Cypress</span><span>Playwright</span><span>Postman</span><span>JMeter</span><span>TestRail</span><span>Jira</span><span>Oracle DB</span><span>React</span><span>Node.js</span><span>SQL</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- ==================== Experience ==================== -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2>Notable Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>BBA Archive Module - TVSL</h3>
-                    <p class="project-period">Mar 2022 - Feb 2024</p>
-                    <p>
-                        Full-stack development and QA of archive management system using Node.js, Express.js,
-                        React.js, and Oracle Database. Responsible for test case design, API testing, and
-                        performance optimization.
-                    </p>
-                    <div class="project-tags">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>React.js</span>
-                        <span>Oracle DB</span>
-                        <span>Test Design</span>
+            <div class="section-header reveal">
+                <span class="kicker">Career Journey</span>
+                <h2 class="section-heading">Experience</h2>
+                <p class="section-sub">Practical QA engineering across software companies, data-heavy products, automation, and enterprise testing workflows.</p>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-head">
+                            <div>
+                                <h3>SQA Engineer</h3>
+                                <p>Dynamic Solution Innovators Ltd. (DSi) · Mohakhali DOHS</p>
+                            </div>
+                            <span class="exp-date">Mar 2024 — Present</span>
+                        </div>
+                        <p>Writing module-wise test cases in TestRail, reporting defects in Jira, validating REST APIs with Postman, automating UI checks with Cypress and Playwright, and integrating Oracle Database checks.</p>
+                        <div class="tag-row"><span>Postman</span><span>TestRail</span><span>Cypress</span><span>Playwright</span><span>JMeter</span><span>Jira</span><span>Oracle DB</span></div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>MCS System Documentation</h3>
-                    <p class="project-period">TVSL</p>
-                    <p>
-                        Comprehensive documentation and testing of Management Control System. Created detailed
-                        test cases for all modules and established quality standards for the system.
-                    </p>
-                    <div class="project-tags">
-                        <span>Documentation</span>
-                        <span>Test Cases</span>
-                        <span>QA Process</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Automation Testing - Multiple Projects</h3>
-                    <p class="project-period">DSi</p>
-                    <p>
-                        Developed test automation scripts using Cypress and Playwright for integration testing
-                        with Oracle Database. Implemented comprehensive test suites with detailed reporting.
-                    </p>
-                    <div class="project-tags">
-                        <span>Cypress</span>
-                        <span>Playwright</span>
-                        <span>Oracle DB</span>
-                        <span>Automation</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>API Testing with Postman</h3>
-                    <p class="project-period">DSi</p>
-                    <p>
-                        Comprehensive API testing for REST services using Postman. Created extensive test
-                        collections for various endpoints with detailed assertions and documentation.
-                    </p>
-                    <div class="project-tags">
-                        <span>Postman</span>
-                        <span>API Testing</span>
-                        <span>REST</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Performance Testing - JMeter</h3>
-                    <p class="project-period">DSi</p>
-                    <p>
-                        Load and performance testing using Apache JMeter. Analyzed system behavior under various
-                        load conditions and provided optimization recommendations.
-                    </p>
-                    <div class="project-tags">
-                        <span>JMeter</span>
-                        <span>Performance</span>
-                        <span>Load Testing</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Data Center Virtualization Course</h3>
-                    <p class="project-period">Jul 2020 - Oct 2020</p>
-                    <p>
-                        Completed advanced course on data center virtualization and cloud computing infrastructure
-                        organized by Bangladesh Research and Education Network (BdREN).
-                    </p>
-                    <div class="project-tags">
-                        <span>Virtualization</span>
-                        <span>VMware</span>
-                        <span>Cloud Computing</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-head">
+                            <div>
+                                <h3>SQA Engineer &amp; Data Analyst</h3>
+                                <p>Tech Valley Solutions Ltd. · Dhaka</p>
+                            </div>
+                            <span class="exp-date">Mar 2022 — Feb 2024</span>
+                        </div>
+                        <p>Created MCS documentation, designed and executed test cases, supported BBA Archive Module development, worked with Node.js, Express.js, React.js, Oracle Database, SQL optimization, and database design improvements.</p>
+                        <div class="tag-row"><span>Test Design</span><span>Node.js</span><span>Express.js</span><span>React.js</span><span>Oracle DB</span><span>SQL</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- ==================== Projects ==================== -->
+    <section id="projects" class="section section-alt">
         <div class="container">
-            <h2>Education</h2>
-            <div class="education-list">
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>Bachelor of Science in Information and Communication Technology (ICT)</h3>
-                        <p class="institution">Mawlana Bhashani Science Technology University</p>
-                        <p class="period">Jan 2016 - Sep 2021</p>
-                        <p class="description">
-                            Comprehensive study of software engineering, data structures, algorithms, database management,
-                            web development, and cloud computing technologies.
-                        </p>
-                    </div>
+            <div class="section-header-row reveal">
+                <div>
+                    <span class="kicker">My Work</span>
+                    <h2 class="section-heading">Projects &amp; Case Notes</h2>
+                    <p class="section-sub">Selected work areas showing how I apply QA, automation, documentation, and performance testing.</p>
                 </div>
-
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>Higher Secondary Certificate (HSC) - Science</h3>
-                        <p class="institution">Badarganj College</p>
-                        <p class="period">Jun 2012 - Jul 2014</p>
-                        <p class="grade">Grade: 5.00 (Excellent)</p>
-                    </div>
-                </div>
+                <span class="counter-text">4 / 4</span>
+            </div>
+            <div class="project-grid">
+                <article class="project-card reveal">
+                    <div class="card-shine"></div>
+                    <span class="project-type">Archive System</span>
+                    <h3>BBA Archive Module</h3>
+                    <p>Full-stack and QA support for archive management using Node.js, Express.js, React.js, and Oracle Database.</p>
+                    <div class="tag-row"><span>Node.js</span><span>React</span><span>Oracle</span><span>Test Design</span></div>
+                </article>
+                <article class="project-card reveal delay-1">
+                    <div class="card-shine"></div>
+                    <span class="project-type">Documentation</span>
+                    <h3>MCS System Testing</h3>
+                    <p>Comprehensive module documentation, test case creation, execution tracking, and quality process alignment.</p>
+                    <div class="tag-row"><span>Docs</span><span>Test Cases</span><span>QA Process</span></div>
+                </article>
+                <article class="project-card reveal delay-2">
+                    <div class="card-shine"></div>
+                    <span class="project-type">Automation</span>
+                    <h3>Cypress &amp; Playwright Suites</h3>
+                    <p>Reusable automation scripts for integration and UI testing with database-aware validation workflows.</p>
+                    <div class="tag-row"><span>Cypress</span><span>Playwright</span><span>Oracle DB</span></div>
+                </article>
+                <article class="project-card reveal delay-3">
+                    <div class="card-shine"></div>
+                    <span class="project-type">Performance</span>
+                    <h3>JMeter Load Testing</h3>
+                    <p>Load and performance analysis with Apache JMeter to reveal bottlenecks and guide optimization recommendations.</p>
+                    <div class="tag-row"><span>JMeter</span><span>Performance</span><span>REST</span></div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Certifications & Achievements -->
-    <section id="certifications" class="certifications">
+    <!-- ==================== Contact ==================== -->
+    <section id="contact" class="section">
+        <div class="contact-orb" aria-hidden="true"></div>
         <div class="container">
-            <h2>Certifications & Achievements</h2>
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Distance Learning Course</h3>
-                    <p>Data Center Virtualization and Cloud Computing Infrastructure - BdREN</p>
+            <div class="contact-header reveal">
+                <span class="kicker">Get In Touch</span>
+                <h2 class="section-heading">Let's build something great.</h2>
+                <p class="section-sub">Have a project in mind or want to discuss QA strategy? Drop a message — I respond within 24 hours.</p>
+                <div class="availability-large">
+                    <span class="avail-dot-lg"></span>
+                    <div>
+                        Open to work
+                        <small>Currently accepting freelance &amp; full-time roles</small>
+                    </div>
                 </div>
-                <div class="certification-item">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Learning & Earning Project</h3>
-                    <p>PHP, Laravel & Web Development - ICT Division</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-side">
+                    <h4>Direct Contact</h4>
+                    <a href="mailto:hmruhul16.ict@gmail.com" class="contact-line"><i class="fas fa-envelope"></i><span>hmruhul16.ict@gmail.com</span></a>
+                    <a href="https://www.linkedin.com/in/hmruhul-ict/" target="_blank" rel="noopener" class="contact-line"><i class="fab fa-linkedin"></i><span>linkedin.com/in/hmruhul-ict</span></a>
+                    <a href="https://github.com/RuhulAminDSi" target="_blank" rel="noopener" class="contact-line"><i class="fab fa-github"></i><span>github.com/RuhulAminDSi</span></a>
                 </div>
-                <div class="certification-item">
-                    <i class="fas fa-book-open"></i>
-                    <h3>Publication</h3>
-                    <p>Beam Splitter Based on Dual-Core Photonic Crystal Fiber - Springer (Jun 2023)</p>
-                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-success').hidden = false;">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" placeholder="Your full name" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" placeholder="you@company.com" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea rows="5" placeholder="Tell me about your project or QA need…" required></textarea>
+                    </label>
+                    <button class="btn btn-primary" type="submit">Send Message <i class="fas fa-arrow-right"></i></button>
+                    <p class="form-success" hidden>Thanks — your message is queued. I'll respond within 24 hours.</p>
+                </form>
             </div>
         </div>
     </section>
+</main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-intro">
-                I'm always interested in hearing about new projects and opportunities.
-                Feel free to reach out!
-            </p>
-            <div class="contact-methods">
-                <a href="mailto:hmruhul16.ict@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>hmruhul16.ict@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/hmruhul-ict/" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/hmruhul-ict</p>
-                </a>
-                <a href="https://github.com/RuhulAminDSi" target="_blank" class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>github.com</p>
-                </a>
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <div class="logo-box"><span>RA</span></div>
+            <div>
+                <strong>Md Ruhul Amin</strong>
+                <small>Open to work</small>
             </div>
         </div>
-    </section>
+        <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-meta">&copy; 2026 Md Ruhul Amin · SQA Engineer · 4+ Yrs Experience</p>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Md Ruhul Amin. All rights reserved.</p>
-            <p>QA Engineer | Test Automation Engineer | AI Automation</p>
-        </div>
-    </footer>
+<a class="floating-email" href="mailto:hmruhul16.ict@gmail.com" aria-label="Email Md Ruhul Amin">
+    <i class="fas fa-paper-plane"></i>
+</a>
+<button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+(function () {
+    const preloader = document.getElementById('preloader');
+    const bar = document.getElementById('preloaderBar');
+    const count = document.getElementById('preloaderCount');
+    if (!preloader || !bar || !count) return;
+    let value = 0;
+    const start = performance.now();
+    const duration = 1500;
+    function tick(now) {
+        const elapsed = now - start;
+        const target = Math.min(100, Math.round((elapsed / duration) * 100));
+        if (target > value) { value = target; bar.style.width = value + '%'; count.textContent = value; }
+        if (value < 100) { requestAnimationFrame(tick); }
+        else { setTimeout(() => { preloader.classList.add('done'); document.body.classList.remove('is-loading'); }, 220); }
+    }
+    requestAnimationFrame(tick);
+})();
+</script>
 </body>
 </html>
