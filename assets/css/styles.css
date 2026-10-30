@@ -468,6 +468,15 @@ ul { list-style: none; }
 }
 .project-card:hover .project-icon { transform: rotate(-6deg); }
 .project-sub { color: var(--text-muted); font-weight: 600; }
+.project-card p.project-full {
+    flex: none; margin: -2px 0 12px;
+    color: var(--text-faint); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.5;
+}
+.exp-project-full {
+    margin: -4px 0 12px; color: var(--text-faint);
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.5;
+}
+abbr.proof-company { text-decoration: none; cursor: help; }
 .project-date {
     display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;
     color: var(--text-faint); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
