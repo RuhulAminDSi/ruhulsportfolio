@@ -136,7 +136,7 @@ setTheme(isDark, false);
 (function() {
     const el = document.getElementById('role-text');
     if (!el) return;
-    const texts = ['Agentic QA Specialist', 'SQA Engineer', 'Performance and Security specialist'];
+    const texts = ['SQA Engineer', 'Test Automation Engineer', 'Performance & Security Testing', 'AI-Assisted QA'];
     if (prefersReducedMotion) {
         el.textContent = texts[0];
         return;
