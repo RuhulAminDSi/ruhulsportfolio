@@ -443,6 +443,13 @@ ul { list-style: none; }
 .service-card p { color: var(--text-muted); font-size: 13px; line-height: 1.6; flex: 1; }
 
 .skill-count { position: absolute; top: 18px; right: 22px; color: var(--text-faint); font-size: 28px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+.skill-icon {
+    width: 36px; height: 36px; display: grid; place-items: center;
+    border-radius: 10px; background: var(--bg-card-hover); border: 1px solid var(--border-light);
+    color: var(--accent); font-size: 14px; margin-bottom: 16px;
+    transition: transform 0.3s var(--ease);
+}
+.skill-card:hover .skill-icon { transform: rotate(-6deg); }
 .skill-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
 .skill-card p { color: var(--text-muted); font-size: 12px; line-height: 1.6; max-width: 80%; }
 
@@ -451,7 +458,19 @@ ul { list-style: none; }
     display: inline-flex; align-items: center; height: 24px; padding: 0 10px;
     border-radius: 999px; background: var(--accent-soft); border: 1px solid rgba(239, 68, 68, 0.2);
     color: var(--accent); font-size: 10px; font-weight: 800; text-transform: uppercase;
-    letter-spacing: 0.1em; width: max-content; margin-bottom: 18px;
+    letter-spacing: 0.1em; width: max-content;
+}
+.project-top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; flex-wrap: wrap; }
+.project-icon {
+    width: 38px; height: 38px; display: grid; place-items: center; flex-shrink: 0;
+    border-radius: 10px; background: var(--bg-card-hover); border: 1px solid var(--border-light);
+    color: var(--accent); font-size: 14px; transition: transform 0.3s var(--ease);
+}
+.project-card:hover .project-icon { transform: rotate(-6deg); }
+.project-sub { color: var(--text-muted); font-weight: 600; }
+.project-date {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;
+    color: var(--text-faint); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
 }
 .project-card h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
 .project-card p { color: var(--text-muted); font-size: 13px; line-height: 1.6; flex: 1; }
@@ -518,16 +537,35 @@ ul { list-style: none; }
 }
 .marquee-track span { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; padding: 0 24px; color: var(--text-muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
 .marquee-track span i { font-size: 20px; }
+/* Brand logos from Simple Icons, drawn as a mask so the icon-* color applies via currentColor. */
+.si {
+    display: inline-block; width: 1em; height: 1em; background-color: currentColor;
+    -webkit-mask: var(--si) center / contain no-repeat; mask: var(--si) center / contain no-repeat;
+}
+.si-cypress { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/cypress.svg'); }
+.si-postman { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/postman.svg'); }
+.si-k6 { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/k6.svg'); }
+.si-owasp { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/owasp.svg'); }
+.si-testrail { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/testrail.svg'); }
+.si-jira { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/jira.svg'); }
+.si-openproject { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/openproject.svg'); }
+.si-oracle { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/oracle.svg'); }
+.si-express { --si: url('https://unpkg.com/simple-icons@13.21.0/icons/express.svg'); }
+
 .icon-cypress { color: #69D3A7; }
 .icon-playwright { color: #2EAD33; }
 .icon-postman { color: #FF6C37; }
 .icon-jmeter { color: #D22128; }
+.icon-k6 { color: #7D64FF; }
 .icon-testrail { color: #65C3E8; }
-.icon-jira { color: #0052CC; }
+.icon-jira { color: #2684FF; }
+.icon-openproject { color: #1A8FD8; }
 .icon-oracle { color: #F80000; }
 .icon-react { color: #61DAFB; }
 .icon-nodejs { color: #339933; }
-.icon-sql { color: #00758F; }
+/* OWASP and Express brand marks are black, so they follow the text color to stay visible in both themes. */
+.icon-zap, .icon-express { color: var(--text-primary); }
+.icon-ai { color: var(--accent-2); }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* Timeline */
@@ -555,6 +593,25 @@ ul { list-style: none; }
 .timeline-content .exp-head p { color: var(--text-muted); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
 .exp-date { color: var(--accent); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
 .timeline-content > p { color: var(--text-secondary); font-size: 13px; line-height: 1.7; }
+.timeline { max-width: 880px; }
+.exp-project {
+    margin-top: 14px; padding: 16px 18px; border-radius: 10px;
+    background: var(--bg-card-hover); border: 1px solid var(--border-subtle);
+}
+.exp-project-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.exp-project-head h4 { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; letter-spacing: -0.01em; }
+.exp-project-head h4 i { color: var(--accent); font-size: 12px; }
+.exp-project-head h4 span { color: var(--text-muted); font-weight: 600; }
+.exp-project-date { color: var(--text-faint); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+.exp-list { display: grid; gap: 6px; }
+.exp-list li {
+    position: relative; padding-left: 16px;
+    color: var(--text-secondary); font-size: 13px; line-height: 1.6;
+}
+.exp-list li::before {
+    content: ''; position: absolute; left: 2px; top: 0.62em;
+    width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+}
 
 @media (max-width: 768px) {
     .timeline-content .exp-head { flex-direction: column; }
